@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExtravaganzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tod" translatesAutoresizingMaskIntoConstraints="NO" id="yOR-GM-9O2">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExM-FA-1v2">
+                                <rect key="frame" x="160" y="776" width="24" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAI-U2-QV1">
+                                <rect key="frame" x="185" y="642" width="24" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="EXTRAVAGANZA_L" translatesAutoresizingMaskIntoConstraints="NO" id="XfT-9A-IE3">
+                                <rect key="frame" x="58" y="234" width="296" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgF-GV-UeG">
+                                <rect key="frame" x="70" y="352" width="273" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.9154452085" green="0.20548775790000001" blue="0.6353172064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="EXTREME"/>
+                                <connections>
+                                    <action selector="extreme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4x8-CZ-X3Z"/>
+                                    <segue destination="hZB-4O-Akd" kind="show" identifier="goToTruthOrDare" id="VCB-Nu-ZLb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqH-UQ-5uj">
+                                <rect key="frame" x="70" y="475" width="273" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="MEDIUM"/>
+                                <connections>
+                                    <action selector="medium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LpW-uq-U1j"/>
+                                    <segue destination="h7z-gB-UbI" kind="show" identifier="GoToSecond" id="P0J-Ps-1I0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Of-E3-iKt">
+                                <rect key="frame" x="70" y="591" width="273" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="EASY"/>
+                                <connections>
+                                    <action selector="easy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pE7-Fq-9Gf"/>
+                                    <segue destination="Rbm-DG-uuR" kind="show" identifier="GoThird" id="Tqn-1h-t9H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yOR-GM-9O2" secondAttribute="trailing" id="EBl-LQ-EEy"/>
+                            <constraint firstItem="yOR-GM-9O2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i43-Bq-SaO"/>
+                            <constraint firstItem="yOR-GM-9O2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oDA-kU-ncP"/>
+                            <constraint firstAttribute="bottom" secondItem="yOR-GM-9O2" secondAttribute="bottom" id="oqe-8C-RyH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="3.5211267605633805"/>
+        </scene>
+        <!--Truth Dare View Controller-->
+        <scene sceneID="bW9-7A-80g">
+            <objects>
+                <viewController id="hZB-4O-Akd" customClass="Truth_Dare_ViewController" customModule="ExtravaganzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="abL-pG-LQk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle_D" translatesAutoresizingMaskIntoConstraints="NO" id="0eO-Ej-mvB">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfL-Vx-beU">
+                                <rect key="frame" x="55" y="64" width="68" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="BACK"/>
+                                <connections>
+                                    <action selector="back_actionn:" destination="hZB-4O-Akd" eventType="touchUpInside" id="SEe-h5-Kp9"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TRUTH DRINK" translatesAutoresizingMaskIntoConstraints="NO" id="3W3-Jy-eRD">
+                                <rect key="frame" x="55" y="107" width="282" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vq9-Xy-hKY">
+                                <rect key="frame" x="61" y="628" width="271" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="DRINK"/>
+                                <connections>
+                                    <action selector="drink_ac:" destination="hZB-4O-Akd" eventType="touchUpInside" id="Ndn-rW-yKM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEZ-gX-vcA">
+                                <rect key="frame" x="61" y="511" width="271" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TRUTH"/>
+                                <connections>
+                                    <action selector="T_ACTI:" destination="hZB-4O-Akd" eventType="touchUpInside" id="yaV-mc-Tte"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Select Truth or Drink. If you don't do the dare you have to take a shot" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LJS-l8-BSQ">
+                                <rect key="frame" x="76" y="338" width="240" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.051522046330000001" green="0.032831002030000001" blue="0.68239599470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CXX-Ok-vF6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0eO-Ej-mvB" firstAttribute="top" secondItem="abL-pG-LQk" secondAttribute="top" id="Oog-bu-Te9"/>
+                            <constraint firstAttribute="trailing" secondItem="0eO-Ej-mvB" secondAttribute="trailing" id="VRB-aY-LAl"/>
+                            <constraint firstItem="0eO-Ej-mvB" firstAttribute="leading" secondItem="abL-pG-LQk" secondAttribute="leading" id="mkf-6Q-EQv"/>
+                            <constraint firstAttribute="bottom" secondItem="0eO-Ej-mvB" secondAttribute="bottom" id="q64-OA-i4Z"/>
+                            <constraint firstItem="0eO-Ej-mvB" firstAttribute="centerX" secondItem="abL-pG-LQk" secondAttribute="centerX" id="wGA-VY-XWp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="V0x-mZ-YHW"/>
+                    <connections>
+                        <outlet property="QuestionT" destination="LJS-l8-BSQ" id="Cud-aj-A1K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mwW-wc-X8N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.64122137404581" y="3.5211267605633805"/>
+        </scene>
+        <!--Tequila View Controller-->
+        <scene sceneID="rDU-kZ-jKK">
+            <objects>
+                <viewController id="h7z-gB-UbI" customClass="TequilaViewController" customModule="ExtravaganzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X4G-0K-sYw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="s" translatesAutoresizingMaskIntoConstraints="NO" id="80A-Lv-thc">
+                                <rect key="frame" x="-10" y="0.0" width="419" height="850"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sh3-ag-hEv">
+                                <rect key="frame" x="63" y="506" width="272" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TRUTH"/>
+                                <connections>
+                                    <action selector="truth_a:" destination="h7z-gB-UbI" eventType="touchUpInside" id="VZ4-bM-bH1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xw0-FD-zfJ">
+                                <rect key="frame" x="63" y="606" width="272" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="DRINK"/>
+                                <connections>
+                                    <action selector="drink_a:" destination="h7z-gB-UbI" eventType="touchUpInside" id="OSm-l2-HQR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGJ-9V-swj">
+                                <rect key="frame" x="43" y="65" width="68" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="BACK"/>
+                                <connections>
+                                    <action selector="back_a:" destination="h7z-gB-UbI" eventType="touchUpInside" id="DDh-os-klT"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TRUTH DRINK" translatesAutoresizingMaskIntoConstraints="NO" id="6ge-az-Bcz">
+                                <rect key="frame" x="58" y="95" width="282" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Select Truth or Drink. If you don't do the dare you have to take a shot" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3e5-22-Arh">
+                                <rect key="frame" x="79" y="339" width="240" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.051522046330000001" green="0.032831002030000001" blue="0.68239599470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Select Truth or Drink. If you don't do the dare you have to take a shot" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="omY-Xh-CAT">
+                                <rect key="frame" x="71" y="347" width="256" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.051522046330000001" green="0.032831002030000001" blue="0.68239599470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lpt-RC-gf5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VaZ-tv-Vs7"/>
+                    <connections>
+                        <outlet property="QText" destination="omY-Xh-CAT" id="UgO-55-WU0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sa0-fr-exR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.885496183206101" y="731.69014084507046"/>
+        </scene>
+        <!--Margarita View Controller-->
+        <scene sceneID="kUa-am-rnb">
+            <objects>
+                <viewController id="Rbm-DG-uuR" customClass="margarita_ViewController" customModule="ExtravaganzaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C29-HG-wYW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="t" translatesAutoresizingMaskIntoConstraints="NO" id="Jsi-fN-GBA">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="TRUTH DRINK" translatesAutoresizingMaskIntoConstraints="NO" id="fPc-9B-IBH">
+                                <rect key="frame" x="55" y="99" width="282" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhr-IQ-GUe">
+                                <rect key="frame" x="55" y="69" width="68" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="BACK"/>
+                                <connections>
+                                    <action selector="ba:" destination="Rbm-DG-uuR" eventType="touchUpInside" id="jPE-0L-wIf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miy-gS-nDZ">
+                                <rect key="frame" x="60" y="535" width="272" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="TRUTH"/>
+                                <connections>
+                                    <action selector="th:" destination="Rbm-DG-uuR" eventType="touchUpInside" id="HJd-4K-vSl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzx-OC-uNy">
+                                <rect key="frame" x="60" y="648" width="272" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="DRINK"/>
+                                <connections>
+                                    <action selector="dr:" destination="Rbm-DG-uuR" eventType="touchUpInside" id="Dlq-zd-lXo"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Select Truth or Drink. If you don't do the dare you have to take a shot" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Aj5-2X-mjN">
+                                <rect key="frame" x="76" y="362" width="240" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.051522046330000001" green="0.032831002030000001" blue="0.68239599470000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oNn-1n-EW2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VDG-St-RKd"/>
+                    <connections>
+                        <outlet property="QuestText" destination="Aj5-2X-mjN" id="MMY-8z-zwW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5P-cg-X9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="835.87786259541986" y="732.3943661971831"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.9154452085" green="0.20548775790000001" blue="0.6353172064" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <image name="EXTRAVAGANZA_L" width="655" height="99"/>
+        <image name="Rectangle_D" width="1242" height="2208"/>
+        <image name="TRUTH DRINK" width="912" height="109"/>
+        <image name="bg_tod" width="1236" height="2208"/>
+        <image name="s" width="1242" height="2208"/>
+        <image name="t" width="1242" height="2208"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
