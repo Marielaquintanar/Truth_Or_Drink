@@ -12,7 +12,7 @@ Truth or Drink es un juego de fiesta divertido y emocionante que te permite juga
 - Opción de tomar un trago en lugar de responder una pregunta incómoda.
 - Interfaz de usuario sencilla y atractiva diseñada en Swift y Xcode.
 
-## Autores
+## Autor
 
 - Mariela Quintanar De la Mora
 
